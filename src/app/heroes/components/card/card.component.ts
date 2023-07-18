@@ -9,11 +9,12 @@ import { Hero } from '../../interfaces/hero.interface';
 })
 export class CardComponent implements OnInit {
 
-@Input()
-public hero!: Hero;
+  @Input()
+  public hero!: Hero;
 
-ngOnInit(): void {
- if(!this.hero) throw Error('Hero property is required')
-}
+
+  ngOnInit(): void {
+    if ( !this.hero ) throw Error('Hero property is required');
+  }
 
 }
